@@ -8,7 +8,8 @@
         {% for restaurant in restaurants %}
             <a href="#">
                 <ul>
-                    <li></li>
+                    <li><a href="http://127.0.0.1:8000/restaurants/detail/{{restaurant.id}}" >{{restaurant.name}}</a></li>
+                    <li>{{restaurant.description}}</li>
                 </ul>
             </a>
         {% endfor %}
